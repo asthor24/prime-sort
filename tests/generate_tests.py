@@ -10,13 +10,13 @@ TOTAL_NUMBERS_PER_FILE = int(1e4)
 INPUT_FILES_LOCATION = "input"
 
 def get_best_case_filename(N):
-    return f"{INPUT_FILES_LOCATION}/{N}best.in"
+    return f"{INPUT_FILES_LOCATION}/best/{N}best.in"
 
 def get_random_case_filename(N):
-    return f"{INPUT_FILES_LOCATION}/{N}random.in"
+    return f"{INPUT_FILES_LOCATION}/random/{N}random.in"
 
 def get_worst_case_filename(N):
-    return f"{INPUT_FILES_LOCATION}/{N}worst.in"
+    return f"{INPUT_FILES_LOCATION}/worst/{N}worst.in"
 
 def get_best_case(N):
     return list(range(1,N+1))
