@@ -9,5 +9,6 @@ void run_comparison_tests(vector<vector<int>> arrays, vector<int> (*algo)(int, v
 		int n = A.size();
 		algo(n, A, comparison_count);
 	}
-	cout << "Average number of comparisons: " << ((double)comparison_count/test_cases) << endl;
+    cerr << "Average number of comparisons: ";
+	cout << ((double)comparison_count/test_cases) << endl;
 }
