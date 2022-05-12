@@ -1,21 +1,21 @@
-import sys
-from random import randint
-
 """
-################################################
-This file generates arrays of integers
-for testing sorting algorithms. For array sizes
-which are powers of two, it generates three
-files. The first one contains already sorted 
-arrays, the second one contains random arrays, 
-and the third one contains reverse sorted arrays
+#######################################################
+This file generates arrays of integers for testing 
+sorting algorithms. For array sizes which are powers of 
+two <= 1024, it generates three files. The first one 
+contains already sorted arrays, the second one contains
+random arrays, and the third one contains reverse 
+sorted arrays.
+
 Usage:
     python generate_tests.py [TOTAL_PER_FILE]
-The TOTAL_PER_FILE is the total number of 
-integers written to each file. This value
-defaults to 10^5
-################################################
+TOTAL_PER_FILE is the total number of integers written 
+to each file. This value defaults to 10^5
+#######################################################
 """
+
+import sys
+from random import randint
 
 total_numbers_per_file = int(1e5)
 if len(sys.argv) > 1:
