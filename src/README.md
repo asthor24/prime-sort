@@ -4,7 +4,7 @@
   - bjornsson sort
   - insertion sort
   - selection sort
-- Those files lie in the 'algos' directory. The files have different suffixes:
-  - \_comp: Outputs the average number of comparisons over all test cases. If you want to see the simplest version of the algorithm look at this.
-  - \_cpu: Outputs the average cpu time used over all test cases. If you want to see how each algorithm can be optimized for performance look at this.
+- Those files lie in the 'algos' directory. The files contain implementations which are meant for different purposes. If the filename contains:
+  - \_comp, that is meant to count the number of comparisons the algorithm makes. If you want to see the simplest version of the algorithm look at this.
+  - \_cpu, that is meant to be a fast version of the algorithm which is used to measure performance. If you want to see how each algorithm can be optimized look at this.
 - In the 'utils' directory are some helpful utility functions such as reading input and validating that the arrays are sorted
