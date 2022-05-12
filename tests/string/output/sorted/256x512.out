@@ -1,8 +1,0 @@
-average # of comparisons:
-	bjornsson: -nan
-	insertion: -nan
-	selection: -nan
-cpu times:
-	bjornsson: 2.13e-07
-	insertion: 2.62e-07
-	selection: 1.2e-07

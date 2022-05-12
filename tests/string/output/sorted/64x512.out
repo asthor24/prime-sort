@@ -1,8 +1,0 @@
-average # of comparisons:
-	bjornsson: 216
-	insertion: 63
-	selection: 2016
-cpu times:
-	bjornsson: 9.0259e-05
-	insertion: 8.0089e-05
-	selection: 0.000144714

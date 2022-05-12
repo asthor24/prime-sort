@@ -10,6 +10,11 @@ sys.path.append(parent)
 import generate_tests_helper
 ####
 
+os.makedirs("input", exist_ok=True)
+os.makedirs("input/random", exist_ok=True)
+os.makedirs("input/sorted", exist_ok=True)
+os.makedirs("input/reversed", exist_ok=True)
+
 letters = string.ascii_lowercase
 def random_array_generator(params):
     N = params[0]

@@ -4,6 +4,10 @@ import sys
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
-import run_tests
+import run_tests_helper
 ####
-run_tests.run_tests("string")
+os.makedirs("output", exist_ok=True)
+os.makedirs("output/random", exist_ok=True)
+os.makedirs("output/sorted", exist_ok=True)
+os.makedirs("output/reversed", exist_ok=True)
+run_tests_helper.run_tests("string")
