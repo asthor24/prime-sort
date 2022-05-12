@@ -1,3 +1,4 @@
 bin/*
 .vscode/*
 tests/__pycache__/*
+tests/*/input/*
