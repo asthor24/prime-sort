@@ -1,2 +1,3 @@
 #include "read_input.cpp"
-vector<vector<int>> read_input();
+template <class T>
+vector<vector<T>> read_input();

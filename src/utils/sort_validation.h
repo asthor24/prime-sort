@@ -1,2 +1,3 @@
 #include "sort_validation.cpp"
-bool are_arrays_sorted(vector<vector<int>> arrays_sorted);
+template <class T>
+bool are_arrays_sorted(vector<vector<T>> arrays_sorted);

@@ -1,12 +1,8 @@
-#include <chrono>
-#include <iostream>
 #include <vector>
-
-#include "../utils/comparison_tests.h"
-#include "../utils/read_input.h"
 using namespace std;
 
-vector<int> bjornsson_sort(int n, vector<int> A, int& comparison_count) {
+template <class T>
+vector<T> bjornsson_sort(int n, vector<T> A, int& comparison_count) {
   for (int d = n; d >= 1; d--) {
     for (int i = d; i <= n; i += d) {
       for (int j = i; j > d; j -= d) {
@@ -19,9 +15,4 @@ vector<int> bjornsson_sort(int n, vector<int> A, int& comparison_count) {
     }
   }
   return A;
-}
-
-int main() {
-  vector<vector<int>> arrays = read_input();
-  run_comparison_tests(arrays, bjornsson_sort);
 }

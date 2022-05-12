@@ -1,11 +1,8 @@
-#include <iostream>
 #include <vector>
-
-#include "../utils/cpu_tests.h"
-#include "../utils/read_input.h"
 using namespace std;
 
-vector<int> insertion_sort(int n, vector<int> A) {
+template <class T>
+vector<T> insertion_sort(int n, vector<T> A) {
   int i, j;
   for (i = 0; i < n; i++) {
     int sub1 = i - 1;
@@ -14,9 +11,4 @@ vector<int> insertion_sort(int n, vector<int> A) {
     }
   }
   return A;
-}
-
-int main() {
-  vector<vector<int>> arrays = read_input();
-  run_cpu_tests(arrays, insertion_sort);
 }
