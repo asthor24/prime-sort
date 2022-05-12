@@ -12,3 +12,11 @@ and then to run the tests run:
 `python run_tests.py`. 
 
 You should now be able to view the results of the test in the output directory. Note that there is one output file per input file.
+
+To clean the `input` directory run:
+
+`python clean_inputs.py`
+
+To clean the `output` directory run:
+
+`python clean_outputs.py`
