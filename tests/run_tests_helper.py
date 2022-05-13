@@ -27,7 +27,7 @@ def run_tests(file_suffix):
         return f'{OUTPUT_FILES_LOCATION}/{input_file_type}/{get_output_file_name(file_name)}'
 
     devnull_file = open(os.devnull, 'wb')
-    for input_file_type in ['sorted', 'random', 'reversed']:
+    for input_file_type in ['random', 'sorted', 'reversed']:
         for file_name in os.listdir(get_input_files_path(input_file_type)):
             input_file_name = get_input_file_location(input_file_type, file_name)
             output_file_name = get_output_file_location(input_file_type, file_name)
@@ -51,7 +51,7 @@ def run_tests(file_suffix):
                 file.write("average # of comparisons:\n")
                 for binary, result in comps:
                     file.write(f'\t{binary}: {result}')
-                file.write("cpu times:\n")
+                file.write("cpu times per array (ns):\n")
                 for binary, result in cpus:
                     file.write(f'\t{binary}: {result}')
             

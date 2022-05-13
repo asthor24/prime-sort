@@ -1,5 +1,6 @@
 #include <chrono>
 #include <ctime>
+#include <iomanip>
 #include <iostream>
 #include <ratio>
 #include <vector>
@@ -22,12 +23,14 @@ void run_cpu_tests(vector<vector<T*>> arrays,
     arrays_sorted[test_case] = algo(n, A);
   }
   auto end_time = Clock::now();
-  double time_seconds =
-      duration_cast<duration<double>>(end_time - start_time).count();
+  long long total_time_nanoseconds =
+      duration_cast<chrono::nanoseconds>(end_time - start_time).count();
+  double average_time_nanoseconds =
+      ((double)total_time_nanoseconds) / test_cases;
   bool are_sorted = are_arrays_sorted(arrays_sorted);
   if (are_sorted) {
-    cerr << "Total cpu time used: ";
-    cout << time_seconds << endl;
+    cerr << "Average cpu time used (nanoseconds): ";
+    cout << fixed << setprecision(3) << average_time_nanoseconds << endl;
   } else {
     cout << "Failed! Did not sort some array." << endl;
   }
