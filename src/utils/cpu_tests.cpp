@@ -11,13 +11,13 @@ using namespace std::chrono;
 typedef std::chrono::high_resolution_clock Clock;
 
 template <class T>
-void run_cpu_tests(vector<vector<T>> arrays,
-                   vector<T> (*algo)(int n, vector<T>)) {
+void run_cpu_tests(vector<vector<T*>> arrays,
+                   vector<T*> (*algo)(int n, vector<T*>)) {
   int test_cases = arrays.size();
-  vector<vector<T>> arrays_sorted(test_cases);
+  vector<vector<T*>> arrays_sorted(test_cases);
   auto start_time = Clock::now();
   for (int test_case = 0; test_case < test_cases; test_case++) {
-    vector<T> A = arrays[test_case];
+    vector<T*> A = arrays[test_case];
     int n = A.size();
     arrays_sorted[test_case] = algo(n, A);
   }

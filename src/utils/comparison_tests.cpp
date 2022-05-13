@@ -4,13 +4,13 @@
 #include "sort_validation.h"
 using namespace std;
 template <class T>
-void run_comparison_tests(vector<vector<T>> arrays,
-                          vector<T> (*algo)(int, vector<T>, int&)) {
+void run_comparison_tests(vector<vector<T*>> arrays,
+                          vector<T*> (*algo)(int, vector<T*>, int&)) {
   int test_cases = arrays.size();
-  vector<vector<T>> arrays_sorted(test_cases);
+  vector<vector<T*>> arrays_sorted(test_cases);
   int comparison_count = 0;
   for (int test_case = 0; test_case < test_cases; test_case++) {
-    vector<T> A = arrays[test_case];
+    vector<T*> A = arrays[test_case];
     int n = A.size();
     arrays_sorted[test_case] = algo(n, A, comparison_count);
   }
