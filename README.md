@@ -10,10 +10,14 @@ To only compile the binaries for a specific sorting algorithm write
 
 For example: `make bjornsson`
 
-# Testing
-See the guide in the `tests` subdirectory.
+## Filename format for binaries:
+The binaries appear in the `bin` directory after compilation. They have the following format:
 
-## Format for binaries:
 {name_of_algorithm}\_{what we're testing for}\_{the type of data we're testing on}
 
 Example: bjornsson_cpu_string 
+
+# Testing
+See the guide in the `tests` directory.
+
+
