@@ -3,6 +3,6 @@ average # of comparisons:
 	insertion: 120.000
 	selection: 120.000
 cpu times per array (ns):
-	bjornsson: 11043.208
-	insertion: 14648.050
-	selection: 3481.665
+	bjornsson: 11633.597
+	insertion: 15670.761
+	selection: 3699.856
