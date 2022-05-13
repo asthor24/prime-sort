@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <vector>
 
@@ -17,7 +18,8 @@ void run_comparison_tests(vector<vector<T*>> arrays,
   bool are_sorted = are_arrays_sorted(arrays_sorted);
   if (are_sorted) {
     cerr << "Average number of comparisons: ";
-    cout << ((double)comparison_count / test_cases) << endl;
+    cout << fixed << setprecision(3) << ((double)comparison_count / test_cases)
+         << endl;
   } else {
     cout << "Failed! Did not sort some array." << endl;
   }
