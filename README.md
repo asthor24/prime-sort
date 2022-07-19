@@ -6,7 +6,7 @@ To compile the binaries which run various sorting algorithms, including bjornsso
 
 To only compile the binaries for a specific sorting algorithm write
 
-`make (bjornsson|insertion|selection)`
+`make (bjornsson|bubble|insertion|selection|shell)`
 
 For example: `make bjornsson`
 
