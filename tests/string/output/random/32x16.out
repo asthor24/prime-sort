@@ -1,8 +1,8 @@
 average # of comparisons:
-	bjornsson: 215.590
+	prime: 215.590
 	insertion: 275.788
 	selection: 496.000
 cpu times per array (ns):
-	bjornsson: 26379.864
+	prime: 26379.864
 	insertion: 33442.148
 	selection: 11112.708

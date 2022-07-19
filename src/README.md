@@ -1,7 +1,7 @@
 # Overview
 
 - There are a few implemented sorting algorithms, such as:
-  - bjornsson sort
+  - prime sort
   - insertion sort
   - selection sort
 - Those files lie in the `algos` directory. The files contain implementations which are meant for different purposes. If the filename contains:
