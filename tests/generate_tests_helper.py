@@ -42,6 +42,7 @@ def generate_tests(random_array_generator, test_cases, params):
 
     arrayLengths = [1<<i for i in range(1,8)]
     stringLengths = [1<<i for i in range(1,4)]
+    """
     print("Generating file", sorted_case_filename, "...")
     with open(sorted_case_filename, 'w') as file:
         file.write(f"{test_cases}\n")
@@ -49,7 +50,7 @@ def generate_tests(random_array_generator, test_cases, params):
             sorted_case = get_sorted_case()
             file.write(f"{len(sorted_case)}\n")
             file.write(" ".join(map(str, sorted_case))+"\n")
-    
+    """
     print("Generating file", random_case_filename, "...")
     with open(random_case_filename, 'w') as file:
         file.write(f"{test_cases}\n")
@@ -58,6 +59,7 @@ def generate_tests(random_array_generator, test_cases, params):
             file.write(f"{len(random_case)}\n")
             file.write(" ".join(map(str, random_case))+"\n")
     
+    """
     print("Generating file", reversed_case_filename, "...")
     with open(reversed_case_filename, 'w') as file:
         file.write(f"{test_cases}\n")
@@ -65,3 +67,4 @@ def generate_tests(random_array_generator, test_cases, params):
             reversed_case = get_reversed_case()
             file.write(f"{len(reversed_case)}\n")
             file.write(" ".join(map(str, reversed_case))+"\n")
+    """

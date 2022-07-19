@@ -1,8 +1,0 @@
-average # of comparisons:
-	bjornsson: 44.000
-	insertion: 55.000
-	shell: 33.000
-cpu times per array (ns):
-	bjornsson: 1128.973
-	insertion: 1517.022
-	shell: 793.837

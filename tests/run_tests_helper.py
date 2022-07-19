@@ -48,11 +48,11 @@ def run_tests(file_suffix):
                     cpus.append((sort_name, p2.stdout.read().decode("utf-8")))
             
             with open(output_file_name, 'w') as file:
-                file.write("average # of comparisons:\n")
+                #file.write("average # of comparisons:\n")
                 for binary, result in comps:
                     file.write(f'\t{binary}: {result}')
-                file.write("cpu times per array (ns):\n")
-                for binary, result in cpus:
-                    file.write(f'\t{binary}: {result}')
+                #file.write("cpu times per array (ns):\n")
+                #for binary, result in cpus:
+                #    file.write(f'\t{binary}: {result}')
             
     devnull_file.close()

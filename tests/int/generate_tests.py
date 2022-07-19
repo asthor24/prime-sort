@@ -21,10 +21,14 @@ def random_array_generator(params):
     return [randint(-(1<<31), (1<<31)) for _ in range(N)]
 
 total_numbers_per_file = int(1e5)
-if len(sys.argv) > 1:
+if len(sys.argv) >= 2:
     total_numbers_per_file = int(float(sys.argv[1])) # converting to floats first allows 1eX notation
 
-powersOfTwo = [i for i in range(4,17)]
-for N in powersOfTwo:
+sizes = "small"
+if len(sys.argv) >= 3:
+    sizes = sys.argv[2]
+
+array_sizes = [1 << i for i in range(4,13)] if sizes == "pw2" else [i for i in range(4,17)]
+for N in array_sizes:
     test_cases = total_numbers_per_file//N+1
     generate_tests_helper.generate_tests(random_array_generator, test_cases, [N])
