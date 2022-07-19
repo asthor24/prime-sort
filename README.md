@@ -1,4 +1,4 @@
-# Bjornsson Sort
+# Prime Sort
 # Compiling Binaries
 To compile the binaries which run various sorting algorithms, including bjornsson sort, run:
 
