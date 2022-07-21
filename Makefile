@@ -1,14 +1,14 @@
-prime_comp_int: 
-	g++ src/ints/prime_comp.cpp -o bin/prime_comp_int
+bjornsson_comp_int: 
+	g++ src/ints/bjornsson_comp.cpp -o bin/bjornsson_comp_int
 
-prime_comp_string: 
-	g++ src/strings/prime_comp.cpp -o bin/prime_comp_string
+bjornsson_comp_string: 
+	g++ src/strings/bjornsson_comp.cpp -o bin/bjornsson_comp_string
 
-prime_cpu_int:
-	g++ src/ints/prime_cpu.cpp -o bin/prime_cpu_int
+bjornsson_cpu_int:
+	g++ src/ints/bjornsson_cpu.cpp -o bin/bjornsson_cpu_int
 
-prime_cpu_string:
-	g++ src/strings/prime_cpu.cpp -o bin/prime_cpu_string
+bjornsson_cpu_string:
+	g++ src/strings/bjornsson_cpu.cpp -o bin/bjornsson_cpu_string
 
 insertion_comp_int: 
 	g++ src/ints/insertion_comp.cpp -o bin/insertion_comp_int
@@ -46,7 +46,7 @@ shell_cpu_int:
 shell_comp_int:
 	g++ src/ints/shell_comp.cpp -o bin/shell_comp_int
 
-prime: prime_comp_int prime_cpu_int prime_comp_string prime_cpu_string
+bjornsson: bjornsson_comp_int bjornsson_cpu_int bjornsson_comp_string bjornsson_cpu_string
 
 insertion: insertion_comp_int insertion_cpu_int insertion_comp_string insertion_cpu_string
 
@@ -56,7 +56,7 @@ bubble: bubble_comp_int bubble_cpu_int
 
 shell: shell_cpu_int shell_comp_int
 
-all: prime insertion selection bubble shell
+all: bjornsson insertion selection bubble shell
 
 clean: 
 	rm -r bin/*

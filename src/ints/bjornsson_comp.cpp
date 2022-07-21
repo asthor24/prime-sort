@@ -1,7 +1,8 @@
+#include "../algos/bjornsson_comp.h"
+
 #include <iostream>
 #include <vector>
 
-#include "../algos/prime_comp.h"
 #include "../datatypes/my_int.cpp"
 #include "../utils/comparison_tests.h"
 #include "../utils/free_arrays.h"
@@ -10,6 +11,6 @@ using namespace std;
 
 int main() {
   vector<vector<my_int*>> arrays = read_input<my_int>();
-  run_comparison_tests(arrays, prime_sort);
+  run_comparison_tests(arrays, bjornsson_sort);
   free_arrays(arrays);
 }
